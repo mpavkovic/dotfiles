@@ -29,3 +29,5 @@ if ! shopt -oq posix; then
         . /etc/bash_completion
     fi
 fi
+
+export GREP_OPTIONS="--color=auto"
