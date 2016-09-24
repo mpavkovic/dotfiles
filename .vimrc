@@ -25,4 +25,6 @@ set ignorecase
 set smartcase
 
 " Adjust behaviour for Vagrantfile files
-au BufRead,BufNewFile Vagrantfile set filetype=ruby tabstop=2
+au BufRead,BufNewFile Vagrantfile set filetype=ruby ts=2 sw=2 sts=2
+" Use INI syntax for .env
+au BufRead,BufNewFile .env set filetype=dosini
